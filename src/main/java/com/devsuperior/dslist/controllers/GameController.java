@@ -22,9 +22,14 @@ public class GameController {
 	private GameService gameService;	
 
 	@GetMapping(value = "/{id}")
-	public GameDTO findById(@PathVariable Long id) {
-		GameDTO result = gameService.findById(id);
-		return result;
+	public ResponseEntity<Object> findById(@PathVariable Long id) {
+
+		try {
+			GameDTO result = gameService.findById(id);
+			return ResponseEntity.status(HttpStatus.OK).body(result);
+		}catch (RuntimeException e){
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Id not found");
+		}
 	}
 
 	@GetMapping
