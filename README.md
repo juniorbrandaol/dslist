@@ -12,7 +12,7 @@ https://devsuperior.com.br
 
 Envie uma mensagem pra gente no email que chegou pra você no ato da sua inscrição.
 
-## Calendário
+## Calendário D
 
 Os conteúdos ficarão temporariamente disponíveis no nosso canal de eventos. Ative o lembrete:
 
